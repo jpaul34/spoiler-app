@@ -1,0 +1,19 @@
+.etiqueta{
+  font-size: large;
+  padding: 11px 20px;
+  border-right: 1px solid #ffffff;
+}
+
+.enlace_ingresar{
+  font-size: small;
+  padding: 11px 20px;
+  backgroun: none;
+  border: none;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
