@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import {Component, OnInit, Input, Output, EventEmitter} from '@angular/core';
 
 @Component({
   selector: 'app-pelicula-banner',
@@ -7,34 +7,54 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class PeliculaBannerComponent implements OnInit {
 
+  // urlImagen = 'https://3.bp.blogspot.com/-k7zDFVoIjlQ/WtbqqkqyiJI/AAAAAAABIaA/jMagN1tbSRktvxQg3GCm5p9W51gIT1Y3QCLcBGAs/s640/21.jpg';
+  // descripcionImagen = 'Imagen de la pelicula Tomb Raider';
   @Input() urlImagen: String;
-    // 'https://3.bp.blogspot.com/-k7zDFVoIjlQ/WtbqqkqyiJI/AAAAAAABIaA/jMagN1tbSRktvxQg3GCm5p9W51gIT1Y3QCLcBGAs/s640/21.jpg';
-  descripcionImagen = 'Imagen de la pelicula Tomb Raider';
-  @Input() nombrePelicula = 'Tomb Raider';
-  descripcionPelicula = 'Alicia vikander,Walton Googins';
-  colorBoton = 'alert alert-primary';
-  texto = '1';
-
-  @Input() esEstreno: true;
+  @Input() descripcionImagen: String;
+  @Input() nombrePelicula: String;
+  @Input() descripcionPelicula: String;
+  @Input() esEstreno: boolean;
   textoEstreno: string;
   claseEstreno: string;
+  @Output() dioClickEnEstado: EventEmitter<boolean> = new EventEmitter();
 
   constructor() {
+    //Las variables serán undefined
+    //Nunca meter la logica
+    // Es solo apra la logica de los servicio y no para los componentes
+  }
+
+  ngOnInit () {
+    console.log('Inicio y seteo color ', this.nombrePelicula);
+    this.setearColoryClase();
+  }
+
+  ngOnChanges(propiedadesActualizadas) {
+    console.log('Algo', propiedadesActualizadas);
+    if (propiedadesActualizadas.esEstreno) {
+      this.setearColoryClase();
+    }
   }
 
 
-  ngOnInit() {
+  setearColoryClase() {
     if (this.esEstreno === true) {
       this.textoEstreno = 'Estreno';
       this.claseEstreno = 'sa-color-estado-rosado';
     } else {
       this.textoEstreno = 'Proximamente';
       this.claseEstreno = 'sa-color-estado-amarillo';
-      if (this.esEstreno === null){
+      if (this.esEstreno === null) {
         this.textoEstreno = '';
         this.claseEstreno = '';
       }
     }
   }
+
+
+  hizoClickEnEstado() {
+    this.dioClickEnEstado.emit(true);
+  }
+
 
 }

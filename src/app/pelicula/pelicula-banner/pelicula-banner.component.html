@@ -2,7 +2,10 @@
      [style.background-image]="'url('+urlImagen+')'"
 >
 
-  <p [class]="'sa-fondo-estado ' + claseEstreno">{{textoEstreno}}</p>
+  <p
+    (click)="hizoClickEnEstado()"
+    [class]="'sa-fondo-estado '
+    + claseEstreno">{{textoEstreno}}</p>
 
   <h3>{{nombrePelicula}}</h3>
   <p>{{descripcionPelicula}}</p>
