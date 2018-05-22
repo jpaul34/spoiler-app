@@ -6,23 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
-
-  mostrarhola = true;
-  arregloNumeros = [1, 2, 3, 4, 5, 6];
-  arregloPeliculas = [
-    {
-      nombre: 'Tomb Raider',
-      descripcion: 'Alicia Vikander, Waiton Goggins',
-      esEstreno: false,
-      urlImagen: 'https://3.bp.blogspot.com/-k7zDFVoIjlQ/WtbqqkqyiJI/AAAAAAABIaA/jMagN1tbSRktvxQg3GCm5p9W51gIT1Y3QCLcBGAs/s640/21.jpg'
-    },
-    {
-      nombre: 'Ready Player One',
-      descripcion: 'Tye Sheridan, olivia Cooke, Ben Mendelsohn, Lena Waithe, T.J. Miller ',
-      esEstreno: false,
-      urlImagen: 'https://4.bp.blogspot.com/-qBM29u2l2RQ/Wtbr6Kf_O_I/AAAAAAABIaM/O8Pvb-8FkPYL1cCjl9Iuv0PrCa5Y0PwNACLcBGAs/s640/21.jpg'
-    }
+  // title = 'app';
+  //
+  // mostrarhola = true;
+  // arregloNumeros = [1, 2, 3, 4, 5, 6];
+  // arregloPeliculas = [
+  //   {
+  //     nombre: 'Tomb Raider',
+  //     descripcion: 'Alicia Vikander, Waiton Goggins',
+  //     esEstreno: false,
+  //     urlImagen: 'https://3.bp.blogspot.com/-k7zDFVoIjlQ/WtbqqkqyiJI/AAAAAAABIaA/jMagN1tbSRktvxQg3GCm5p9W51gIT1Y3QCLcBGAs/s640/21.jpg'
+  //   },
+  //   {
+  //     nombre: 'Ready Player One',
+  //     descripcion: 'Tye Sheridan, olivia Cooke, Ben Mendelsohn, Lena Waithe, T.J. Miller ',
+  //     esEstreno: false,
+  //     urlImagen: 'https://4.bp.blogspot.com/-qBM29u2l2RQ/Wtbr6Kf_O_I/AAAAAAABIaM/O8Pvb-8FkPYL1cCjl9Iuv0PrCa5Y0PwNACLcBGAs/s640/21.jpg'
+  //   }
   ];
 
   //

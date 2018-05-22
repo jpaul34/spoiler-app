@@ -10,6 +10,10 @@ import { TituloComponent } from './titulo/titulo/titulo.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {ButtonModule} from 'primeng/button';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,11 +27,15 @@ import {ButtonModule} from 'primeng/button';
   imports: [
     BrowserModule,
     NgbModule.forRoot(),
-    ButtonModule
+    ButtonModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
 
 
