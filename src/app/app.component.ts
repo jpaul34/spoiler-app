@@ -25,11 +25,11 @@ export class AppComponent {
     }
   ];
 
-
-  alerta(evento) {
-    console.log('Evento: ', evento); // true
-    alert('DIO CLICK EN ES ESTRENO!!!!!!!!!');
-  }
+  //
+  // alerta(evento) {
+  //   console.log('Evento: ', evento); // true
+  //   alert('DIO CLICK EN ES ESTRENO!!!!!!!!!');
+  // }
 
 
   // tituloPelicula1 = 'Tomb Raider';

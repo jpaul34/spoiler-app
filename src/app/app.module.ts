@@ -8,6 +8,7 @@ import { MenuPrincipalComponent } from './menu-principal/menu-principal/menu-pri
 import { MenuSecundarioComponent } from './menu-secundario/menu-secundario/menu-secundario.component';
 import { TituloComponent } from './titulo/titulo/titulo.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {ButtonModule} from 'primeng/button';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   ],
   imports: [
     BrowserModule,
-    NgbModule.forRoot()
+    NgbModule.forRoot(),
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
