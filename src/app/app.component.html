@@ -1,23 +1,73 @@
-<div class="row">
-  <div class="col-sm-6 text center" *ngFor="let pelicula of arregloPeliculas">
-    <!--<img [src] = "pelicula.urlImagen"-->
-         <!--[alt] = "pelicula.descripcion">-->
-    <!--<h1>{{pelicula.nombre}} / {{pelicula.esEstreno}}</h1>-->
-    <!--<p>{{pelicula.descripcion}}</p>-->
-    <app-pelicula-banner
-      [urlImagen]="pelicula.urlImagen"
-      [descripcionPelicula]="pelicula.descripcion"
-      [nombrePelicula]="pelicula.nombre"
-      [esEstreno]="pelicula.esEstreno"
-      (dioClickEnEstado)="alerta($event)"
-    >
+<ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+  <ngb-panel title="Simple">
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel>
+    <ng-template ngbPanelTitle>
+      <span>&#9733; <b>Fancy</b> title &#9733;</span>
+    </ng-template>
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+  <ngb-panel title="Disabled" [disabled]="true">
+    <ng-template ngbPanelContent>
+      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia
+      aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+      sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica,
+      craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings
+      occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
+      labore sustainable VHS.
+    </ng-template>
+  </ngb-panel>
+</ngb-accordion>
 
-    </app-pelicula-banner>
 
-    <button (click)="pelicula.esEstreno = !pelicula.esEstreno"> Cambiar es estreno</button>
 
-  </div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="row">-->
+  <!--<div class="col-sm-6 text center" *ngFor="let pelicula of arregloPeliculas">-->
+    <!--&lt;!&ndash;<img [src] = "pelicula.urlImagen"&ndash;&gt;-->
+         <!--&lt;!&ndash;[alt] = "pelicula.descripcion">&ndash;&gt;-->
+    <!--&lt;!&ndash;<h1>{{pelicula.nombre}} / {{pelicula.esEstreno}}</h1>&ndash;&gt;-->
+    <!--&lt;!&ndash;<p>{{pelicula.descripcion}}</p>&ndash;&gt;-->
+    <!--<app-pelicula-banner-->
+      <!--[urlImagen]="pelicula.urlImagen"-->
+      <!--[descripcionPelicula]="pelicula.descripcion"-->
+      <!--[nombrePelicula]="pelicula.nombre"-->
+      <!--[esEstreno]="pelicula.esEstreno"-->
+      <!--(dioClickEnEstado)="alerta($event)"-->
+    <!--&gt;-->
+
+    <!--</app-pelicula-banner>-->
+
+    <!--<button (click)="pelicula.esEstreno = !pelicula.esEstreno"> Cambiar es estreno</button>-->
+
+  <!--</div>-->
+<!--</div>-->
 
 
 

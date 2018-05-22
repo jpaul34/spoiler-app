@@ -7,6 +7,7 @@ import { BuscadorComponent } from './buscador/buscador/buscador.component';
 import { MenuPrincipalComponent } from './menu-principal/menu-principal/menu-principal.component';
 import { MenuSecundarioComponent } from './menu-secundario/menu-secundario/menu-secundario.component';
 import { TituloComponent } from './titulo/titulo/titulo.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -16,11 +17,15 @@ import { TituloComponent } from './titulo/titulo/titulo.component';
     MenuPrincipalComponent,
     MenuSecundarioComponent,
     TituloComponent
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    NgbModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+
